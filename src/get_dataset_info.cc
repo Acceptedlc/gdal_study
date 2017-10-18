@@ -13,19 +13,20 @@ int main() {
   if (poDataset == NULL) {
     std::cout<< "fail" << std::endl;
   } else {
-    double        adfGeoTransform[6];
-    printf( "Driver: %s/%s\n",
-            poDataset->GetDriver()->GetDescription(),
-            poDataset->GetDriver()->GetMetadataItem( GDAL_DMD_LONGNAME ) );
-    std::cout<<"-----------------------"<<std::endl;
+    double adfGeoTransform[6];
+
+//    printf( "Driver: %s/%s\n",
+//            poDataset->GetDriver()->GetDescription(),
+//            poDataset->GetDriver()->GetMetadataItem( GDAL_DMD_LONGNAME ) );
+//    std::cout<<"-----------------------"<<std::endl;
     printf( "Size is %dx%dx%d\n",
             poDataset->GetRasterXSize(), poDataset->GetRasterYSize(),
             poDataset->GetRasterCount() );
-    std::cout<<"-----------------------"<<std::endl;
-    if( poDataset->GetProjectionRef()  != NULL ){
-      printf( "Projection is `%s'\n", poDataset->GetProjectionRef() );
-      std::cout<<"-----------------------"<<std::endl;
-    }
+//    std::cout<<"-----------------------"<<std::endl;
+//    if( poDataset->GetProjectionRef()  != NULL ){
+//      printf( "Projection is `%s'\n", poDataset->GetProjectionRef() );
+//      std::cout<<"-----------------------"<<std::endl;
+//    }
     if( poDataset->GetGeoTransform( adfGeoTransform ) == CE_None )
     {
       printf( "Origin = (%.6f,%.6f)\n",
