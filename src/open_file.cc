@@ -13,6 +13,6 @@ int main() {
   if (poDataset == NULL) {
     std::cout<< "fail" << std::endl;
   } else {
-    std::cout<< "successa" << std::endl;
+    std::cout<< "success" << std::endl;
   }
 }
