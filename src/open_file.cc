@@ -8,7 +8,7 @@ int main() {
   GDALDataset *poDataset;
   GDALAllRegister();
   poDataset = (GDALDataset *) GDALOpen(
-          "/Users/lichao/Desktop/project/engine-core-image/test/data/B03_1sss.jp2",
+          "/Users/lichao/Desktop/project/engine-core-image/test/data/B03_1sssaa.jp2",
           GA_ReadOnly);
   if (poDataset == NULL) {
     std::cout<< "fail" << std::endl;
