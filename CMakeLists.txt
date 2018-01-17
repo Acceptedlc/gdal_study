@@ -17,3 +17,6 @@ target_link_libraries(dataInfo ${GDAL_LIBRARY})
 
 add_executable(geo_pix_transform ${CMAKE_CURRENT_SOURCE_DIR}/src/geo_pix_transform.cc)
 target_link_libraries(geo_pix_transform ${GDAL_LIBRARY})
+
+add_executable(create_dataset_self ${CMAKE_CURRENT_SOURCE_DIR}/src/create_dataset_self.cc)
+target_link_libraries(create_dataset_self ${GDAL_LIBRARY})
