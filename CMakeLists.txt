@@ -1,8 +1,8 @@
 project(test_gdal)
+cmake_minimum_required(VERSION 3.11)
 file(GLOB SRC ${CMAKE_CURRENT_SOURCE_DIR}/src/*.cc)
 set(EXECUTABLE_OUTPUT_PATH ${PROJECT_BINARY_DIR}/bin)
 
-# set GDAL PATH
 if (APPLE)
     find_package(GDAL REQUIRED)
 endif (APPLE)
