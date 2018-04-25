@@ -1,3 +1,0 @@
-docker run -it -v /Users/chaoli/Desktop/project/gdal_study:/root/code cbc522386d76 /bin/bash
-
-docker cp /Users/chaoli/Downloads/ERDAS_ECWJP2_SDK-5.2.1.bin cc18a081bc4e:/root
